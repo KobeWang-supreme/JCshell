@@ -14,7 +14,7 @@ terminated command(s) and waits for the next command/job from the user.
 Like a traditional shell program, when the JCshell process is ready to accept input, it displays a
 prompt and waits for input from the user. The prompt should consist of the process ID of the JCshell.
 
-## JCshell [60] ##
+    ## JCshell [60] ##
 
 After accepting a line of input from the user, it parses the input line to extract the command name(s)
 and the associated argument list(s), and then creates the child process(es) to execute the command(s).
@@ -28,7 +28,7 @@ When executing a job (with multiple commands), JCshell wait for all processes to
 before displaying the statistics. The order of the output should reflect the termination order of those
 child processes. Here is an example with three commands joined by two pipes:
 
-## JCshell [261] ## cat cpu-mechanisms.txt | grep trap | wc -w
+    ## JCshell [261] ## cat cpu-mechanisms.txt | grep trap | wc -w
 456
 (PID)305 (CMD)cat (STATE)Z (EXCODE)0 (PPID)261 (USER)0.00 (SYS)0.00 (VCTX)11
 (NVCTX)0
