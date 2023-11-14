@@ -1,13 +1,16 @@
 # JCshell
 
-The program accepts a single command or a job that consists of a sequence of commands linked
+1. The program accepts a single command or a job that consists of a sequence of commands linked
 together with pipes(|) and executes the corresponding command(s) with the given argumentlist(s).
+
 2. The program can locate and execute any valid program (i.e., compiled programs) by giving an
 absolute path (starting with /) or a relative path (starting with ./ or ../) or by searching directories
 under the $PATH environment variable.
-3. The program should be terminated by the built-in exit command but it cannot be terminated by
+
+4. The program should be terminated by the built-in exit command but it cannot be terminated by
 the Cltr-c key or the SIGINT signal.
-4. After the submitted command/job terminated, the program prints the running statistics of all
+
+6. After the submitted command/job terminated, the program prints the running statistics of all
 terminated command(s) and waits for the next command/job from the user.
 
 
