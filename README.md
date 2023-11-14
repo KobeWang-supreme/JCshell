@@ -16,6 +16,7 @@ prompt and waits for input from the user. The prompt should consist of the proce
 
     ## JCshell [60] ##
 
+
 After accepting a line of input from the user, it parses the input line to extract the command name(s)
 and the associated argument list(s), and then creates the child process(es) to execute the command(s).
 We can assume that the command line is upper bound by 1024 characters with 30 strings at maximum
@@ -30,9 +31,12 @@ child processes. Here is an example with three commands joined by two pipes:
 
     ## JCshell [261] ## cat cpu-mechanisms.txt | grep trap | wc -w
 456
+
 (PID)305 (CMD)cat (STATE)Z (EXCODE)0 (PPID)261 (USER)0.00 (SYS)0.00 (VCTX)11
 (NVCTX)0
+
 (PID)306 (CMD)grep (STATE)Z (EXCODE)0 (PPID)261 (USER)0.00 (SYS)0.00 (VCTX)4
 (NVCTX)0
+
 (PID)307 (CMD)wc (STATE)Z (EXCODE)0 (PPID)261 (USER)0.00 (SYS)0.00 (VCTX)4
 (NVCTX)0
